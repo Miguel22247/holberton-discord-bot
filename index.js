@@ -44,4 +44,5 @@ client.on("ready", () => {
 	
 		presence();
 	  }, 1000);
-	})
+	});
+	client.login(process.env.TOKEN);
