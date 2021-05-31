@@ -5,3 +5,4 @@ Welcome to the Holberton Discord Bot, this discord bot allows to every student t
 - [Miguel22247](https://github.com/Miguel22247)
 - [JuanDAC](https://github.com/JuanDAC)
 - [ManuBedoya](https://github.com/ManuBedoya)
+- [ForeroAlexander](https://github.com/ForeroAlexander)
