@@ -25,8 +25,8 @@ client.on("ready", () => {
 	console.log(`Bot iniciado correctamente`)
 	const array = [
 		{
-		  	name: `the intranet`,
-		  	type: `WATCHING`
+			  name: `the intranet`,
+			  type: `WATCHING`
 		},
 		{
 			name: `to write code`,
@@ -44,5 +44,9 @@ client.on("ready", () => {
 	
 		presence();
 	  }, 1000);
+
+
+		const args = message.content.slice(prefix.length).trim().split(/ +/g);
+		const command = args.shift().toLowerCase();
 	});
 	client.login(process.env.TOKEN);
