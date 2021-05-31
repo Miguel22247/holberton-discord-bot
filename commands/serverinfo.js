@@ -1,4 +1,4 @@
-if (command == server) {
+if (command === server) {
 	var server = message.guild;
   
 const embed = new Discord.MessageEmbed()
