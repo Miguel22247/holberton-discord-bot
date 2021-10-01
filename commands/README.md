@@ -1,1 +1,0 @@
-En esta carpeta seran agregados los archivos de los comandos los cuales una vez terminados se agregaran al archivo principal
