@@ -1,15 +1,18 @@
 const { Client, Intents } = require('discord.js');
+const config = require('./config.json');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+client.on("ready", () => {
+  console.log(`Bienvenido de nuevo, soy el bot de Expreso Mercosur`);
+
+  client.user.setPresence({
+      activity: {
+          name: `The intranet | Watching Holberton School server with ${client.users.cache.size} members.`,
+          type: "PLAYING"
+      },
+      status: "idle"
+  }); 
 });
 
-client.on('messageCreate', message => {
-  if (message.content === 'ping') {
-      let ping = Math.floor(message.client.ws.ping);
-      message.channel.send(":ping_pong: Pong!, tu ping es de "+ ping +"ms");
-  }
-});
 
 client.login(config.token);
